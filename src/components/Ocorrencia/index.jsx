@@ -10,6 +10,7 @@ export default function Ocorrencia({ ocorrencia, evidencias, crime, listaCrimes 
         return new Date(dateString).toLocaleDateString('pt-BR', options);
     };
 
+    console.log(crime)
     const [isLoading, setIsLoading] = useState(false)
     const [isLoadingCrime, setIsLoadingCrime] = useState(false)
     const [visibilityControl, setvisibilityControl] = useState(ocorrencia.visibilidade)
