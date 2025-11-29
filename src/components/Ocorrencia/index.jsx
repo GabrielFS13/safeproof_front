@@ -4,7 +4,7 @@ import { GiPadlock, GiPadlockOpen } from "react-icons/gi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 
-export default function Ocorrencia({ ocorrencia, evidencias, crime }) {
+export default function Ocorrencia({ ocorrencia, evidencias, crime, listaCrimes }) {
     const formatDate = (dateString) => {
         const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
         return new Date(dateString).toLocaleDateString('pt-BR', options);
