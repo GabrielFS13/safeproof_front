@@ -14,7 +14,7 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
     const [isLoadingCrime, setIsLoadingCrime] = useState(false)
     const [visibilityControl, setvisibilityControl] = useState(ocorrencia.visibilidade)
     const API_URL = process.env.REACT_APP_API_URL;
-    const [tipo_crime, setTipo_Crime] = useState(listaCrimes.find(crime => crime.id_crime === ocorrencia.ocorrencia.id_crime))
+    const [tipo_crime, setTipo_Crime] = useState(listaCrimes.find(crime => crime.id_crime === ocorrencia.id_crime))
     const [editCrime, setEditCrime] = useState(false)
 
     const handleVisibility = async () => {
