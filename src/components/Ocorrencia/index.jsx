@@ -4,7 +4,7 @@ import { GiPadlock, GiPadlockOpen } from "react-icons/gi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 
-export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
+export default function Ocorrencia({ ocorrencia, evidencias, crime }) {
     const formatDate = (dateString) => {
         const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
         return new Date(dateString).toLocaleDateString('pt-BR', options);
@@ -14,13 +14,9 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
     const [isLoadingCrime, setIsLoadingCrime] = useState(false)
     const [visibilityControl, setvisibilityControl] = useState(ocorrencia.visibilidade)
     const API_URL = process.env.REACT_APP_API_URL;
-    const [tipo_crime, setTipo_Crime] = useState()
+    const [tipo_crime, setTipo_Crime] = useState(crime)
     const [editCrime, setEditCrime] = useState(false)
 
-    useEffectEvent(()=> {
-        setTipo_Crime(listaCrimes.find(crime => crime.id_crime === ocorrencia.id_crime))
-    }, [])
-    
     const handleVisibility = async () => {
         setIsLoading(true)
         const newVisibility = !visibilityControl
@@ -80,7 +76,7 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
 
                     :
                     <span>
-                        Tipo crime: {tipo_crime?.nome_crime}
+                        Tipo crime: {tipo_crime.nome_crime}
                         <CiEdit size={20} className='crime_edit_btn' onClick={handleEditMode} />
                     </span>
                 }
