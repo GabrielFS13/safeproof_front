@@ -1,0 +1,167 @@
+.ocorrencia-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ocorrencia-card h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.info-group {
+    margin-bottom: 0.75rem;
+}
+
+.info-group strong {
+    display: block;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.info-group a {
+    color: #0056b3;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.info-group a:hover {
+    text-decoration: underline;
+}
+
+.info-group .hash span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    color: #6c757d;
+    word-break: break-all;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.status-ativa {
+    background-color: #28a745;
+}
+
+.status-arquivada {
+    background-color: #6c757d;
+}
+
+.gravidade {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.gravidade-baixa {
+    color: #17a2b8;
+}
+
+.gravidade-media {
+    color: #ffc107;
+}
+
+.gravidade-alta {
+    color: #dc3545;
+}
+
+.ocorrencia-link {
+    text-decoration: none;
+    color: inherit;
+    /* Remove a cor azul padrão do link */
+    display: block;
+    /* Faz o link ocupar todo o espaço do card */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 1.5rem;
+    right: 1.5rem;
+    left: 1.5rem;
+}
+
+
+.visibility-badge {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.evidencias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid rgb(87, 87, 255);
+    padding: 8px;
+}
+
+.visibility-button button {
+    padding: 8px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.girar {
+    animation: rodar 2s linear infinite;
+}
+
+@keyframes rodar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.ocorrencia-id{
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ocorrencias-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ocorrencias-header svg{
+    cursor: pointer;
+}
+
+.crime_edit_btn{
+    cursor: pointer;
+}

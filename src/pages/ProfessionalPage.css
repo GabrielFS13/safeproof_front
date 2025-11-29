@@ -1,0 +1,98 @@
+.ocorrencias_page {
+    color: black;
+    margin-top: 120px;
+}
+
+.container_ocorrencias {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.ocorrencias_card {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 16px;
+    box-shadow: 1px 7px 36px -5px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 1px 7px 36px -5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 1px 7px 36px -5px rgba(0, 0, 0, 0.64);
+}
+
+.ocorrencias_card .contato_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.ocorrencias_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.ocorrencia_BAIXA {
+    padding: 6px;
+    border-radius: 16px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+
+.ocorrencia_MEDIA {
+    padding: 6px;
+    border-radius: 16px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.ocorrencia_ALTA {
+    padding: 6px;
+    border-radius: 16px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+
+}
+
+.container_button_accept button {
+    cursor: pointer;
+    background-color: rgb(53, 148, 53);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.ocorrencias_infos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.ocorrencias_filtros menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+.ocorrencias_filtros menu ul li select {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 1px solid;
+}

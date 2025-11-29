@@ -1,0 +1,15 @@
+/* ====== Fundo moderno animado ====== */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #e5e7eb;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ====== Ajustes gerais ====== */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
