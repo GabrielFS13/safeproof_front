@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffectEvent, useState } from 'react';
 import './Ocorrencia.css';
 import { GiPadlock, GiPadlockOpen } from "react-icons/gi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
@@ -14,9 +14,13 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
     const [isLoadingCrime, setIsLoadingCrime] = useState(false)
     const [visibilityControl, setvisibilityControl] = useState(ocorrencia.visibilidade)
     const API_URL = process.env.REACT_APP_API_URL;
-    const [tipo_crime, setTipo_Crime] = useState(listaCrimes.find(crime => crime.id_crime === ocorrencia.id_crime))
+    const [tipo_crime, setTipo_Crime] = useState({id_crime: 0, nome_crime: "Selecione o tipo do crime"})
     const [editCrime, setEditCrime] = useState(false)
 
+    useEffectEvent(()=> {
+        setTipo_Crime(listaCrimes.find(crime => crime.id_crime === ocorrencia.id_crime))
+    }, [])
+    
     const handleVisibility = async () => {
         setIsLoading(true)
         const newVisibility = !visibilityControl
