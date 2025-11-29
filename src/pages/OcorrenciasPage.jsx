@@ -76,7 +76,8 @@ const OcorrenciasPage = ({userType}) => {
                         listaCrimes={listaCrimes}
                         ocorrencia={ocorrencia.ocorrencia} 
                         evidencias={ocorrencia.evidencias}
-                        key={ocorrencia.id_ocorrencia} />
+                        key={ocorrencia.id_ocorrencia} 
+                        />
                     ))}
                 </section>
             )}

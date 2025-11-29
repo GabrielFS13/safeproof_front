@@ -17,9 +17,9 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
     const [tipo_crime, setTipo_Crime] = useState('')
     const [editCrime, setEditCrime] = useState(false)
 
-    useEffect(()=> {
+    useEffect(() => {
         setTipo_Crime(listaCrimes.find(crime => crime.id_crime === ocorrencia.ocorrencia.id_crime))
-    },[])
+    }, [])
 
     const handleVisibility = async () => {
         setIsLoading(true)
@@ -55,7 +55,11 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
         setEditCrime(true)
     }
 
-
+    if (!ocorrencia || !evidencias || !listaCrimes) {
+        return <>
+            Carregando....
+        </>
+    }
     return (
         <>
             <div className="ocorrencia-card">
