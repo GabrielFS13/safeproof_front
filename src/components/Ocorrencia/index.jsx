@@ -4,7 +4,7 @@ import { GiPadlock, GiPadlockOpen } from "react-icons/gi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 
-export default function Ocorrencia({ ocorrencia, evidencias, crime, listaCrimes }) {
+export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
     const formatDate = (dateString) => {
         const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
         return new Date(dateString).toLocaleDateString('pt-BR', options);
@@ -14,13 +14,13 @@ export default function Ocorrencia({ ocorrencia, evidencias, crime, listaCrimes 
     const [isLoadingCrime, setIsLoadingCrime] = useState(false)
     const [visibilityControl, setvisibilityControl] = useState(ocorrencia.visibilidade)
     const API_URL = process.env.REACT_APP_API_URL;
-    const [tipo_crime, setTipo_Crime] = useState()
+    const [tipo_crime, setTipo_Crime] = useState('')
     const [editCrime, setEditCrime] = useState(false)
 
     useEffect(()=> {
-        setTipo_Crime(crime)
+        setTipo_Crime(listaCrimes.find(crime => crime.id_crime === ocorrencia.ocorrencia.id_crime))
     },[])
-    
+
     const handleVisibility = async () => {
         setIsLoading(true)
         const newVisibility = !visibilityControl
