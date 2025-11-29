@@ -73,7 +73,7 @@ const OcorrenciasPage = ({userType}) => {
                     {ocorrencias.map((ocorrencia) => (
                         // Usar o ID da ocorrência como chave é a melhor prática
                         <Ocorrencia 
-                        crime={listaCrimes.find(crime => crime.id_crime === ocorrencia.id_crime)} 
+                        crime={listaCrimes.find(crime => crime.id_crime === ocorrencia.ocorrencia.id_crime)} 
                         listaCrimes={listaCrimes}
                         ocorrencia={ocorrencia.ocorrencia} 
                         evidencias={ocorrencia.evidencias}
