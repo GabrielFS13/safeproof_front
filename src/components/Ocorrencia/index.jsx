@@ -106,8 +106,8 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
                             <span>URL: {e.url_pagina}</span>
                             <span>
                                 <a
-                                    href={`https://web.archive.org/save/${e.url_pagina}`}
-                                    target='_blank'
+                                target='_blank'
+                                href={`https://web.archive.org/save/${e.url_pagina}`}
                                 >Wayback Machine</a>
                             </span>
                             <span>Data coleta da evidência: {e.created_at}</span>
