@@ -37,15 +37,15 @@ const HomePage = () => {
                 <h2>Como garantimos a validade da sua prova</h2>
                 <div className="features-grid">
                     <div className="feature-card">
-                        <h4>Coleta Rápida com a Extensão</h4>
+                        <h4>Coleta rápida com a extensão</h4>
                         <p>Com um único clique no seu navegador, nossa extensão captura a página e todas as informações técnicas relevantes.</p>
                     </div>
                     <div className="feature-card">
-                        <h4>Hash Criptográfico</h4>
+                        <h4>Hash criptográfico</h4>
                         <p>Geramos uma "impressão digital" (SHA-256) que comprova que o arquivo não foi alterado, garantindo sua integridade.</p>
                     </div>
                     <div className="feature-card">
-                        <h4>Carimbo de Tempo (Timestamp)</h4>
+                        <h4>Carimbo de tempo (Timestamp)</h4>
                         <p>Registramos a data e a hora exatas da coleta, criando uma linha do tempo verificável e incontestável.</p>
                     </div>
                     <div className="feature-card">
@@ -68,19 +68,19 @@ const HomePage = () => {
 
                     <div className="step-card">
                         <div className="step-number">2</div>
-                        <h3>Login na Extensão</h3>
+                        <h3>Login na extensão</h3>
                         <p>Abra a extensão e faça seu login. Caso não tenha conta, crie uma gratuitamente em <a href="https://safeproof.com.br/registrar" target="_blank" rel="noopener noreferrer">safeproof.com.br/registrar</a>.</p>
                     </div>
 
                     <div className="step-card">
                         <div className="step-number">3</div>
-                        <h3>Gerenciar Ocorrência</h3>
+                        <h3>Gerenciar ocorrência</h3>
                         <p>Após logar, crie uma nova ocorrência para organizar suas provas ou selecione uma ocorrência já existente no menu.</p>
                     </div>
 
                     <div className="step-card">
                         <div className="step-number">4</div>
-                        <h3>Coleta de Evidências</h3>
+                        <h3>Coleta de evidências</h3>
                         <p>Navegue até a página do conteúdo ofensivo ou criminoso e use a extensão para capturar e certificar a prova digital.</p>
                     </div>
 
