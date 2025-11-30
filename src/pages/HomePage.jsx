@@ -6,11 +6,11 @@ const HomePage = () => {
         <main className="homepage">
             <section className="hero-section">
                 <div className="hero-content">
-                    <h1>Sua Prova Digital, incontestável.</h1>
+                    <h1>Sua prova digital, incontestável.</h1>
                     <p className="subtitle">
                         A ferramenta definitiva para coletar e validar evidências de crimes virtuais com segurança e validade jurídica. Transforme a injustiça online em ação legal.
                     </p>
-                    <a href="./JuriWeb.zip" className="cta-button">Instale a Extensão Gratuita</a>
+                    <a href="./JuriWeb.zip" className="cta-button">Instale a extensão gratuita</a>
                 </div>
             </section>
 
@@ -34,7 +34,7 @@ const HomePage = () => {
             </section>
 
             <section className="features-section">
-                <h2>Como Garantimos a Validade da sua Prova</h2>
+                <h2>Como garantimos a validade da sua prova</h2>
                 <div className="features-grid">
                     <div className="feature-card">
                         <h4>Coleta Rápida com a Extensão</h4>
@@ -56,7 +56,7 @@ const HomePage = () => {
             </section>
 
             <section className="tutorial-section">
-                <h2>Passo a Passo</h2>
+                <h2>Passo a passo</h2>
                 <p className="section-intro">Veja como é simples começar a coletar evidências com validade jurídica.</p>
 
                 <div className="tutorial-steps">
