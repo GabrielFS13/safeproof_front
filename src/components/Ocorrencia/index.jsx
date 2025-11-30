@@ -105,7 +105,10 @@ export default function Ocorrencia({ ocorrencia, evidencias, listaCrimes }) {
                         <div key={e.id_evidencia} className='evidencias-container'>
                             <span>URL: {e.url_pagina}</span>
                             <span>
-                                <a href={`https://web.archive.org/save/${e.url_pagina}`}>Wayback Machine</a>
+                                <a
+                                    href={`https://web.archive.org/save/${e.url_pagina}`}
+                                    target='_blank'
+                                >Wayback Machine</a>
                             </span>
                             <span>Data coleta da evidência: {e.created_at}</span>
                             <img src={`https://pub-713a617ff8764feb8ecd29d17d543280.r2.dev/${e.imagem_url}`} alt='Print da evidência coletada' width={600} />
