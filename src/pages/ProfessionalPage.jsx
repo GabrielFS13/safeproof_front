@@ -215,7 +215,7 @@ export default function ProfessionalPage({ userID }) {
                 )) : (<span style={{
                     color: 'red'
                 }}>
-                    {isLoading && <AiOutlineLoading3Quarters className='girar' color='black' size={30} />}
+                    {ocorrencias.length === 0 ? "Nenhuma ocorrência pública no momento" : isLoading && <AiOutlineLoading3Quarters className='girar' color='black' size={30} />}
                 </span>)}
             </section>
         </div>
