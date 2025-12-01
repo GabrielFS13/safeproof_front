@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 const HomePage = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <main className="homepage">
             <section className="hero-section">
@@ -13,7 +15,6 @@ const HomePage = () => {
                     <a href="./JuriWeb.zip" className="cta-button">Instale a extensão gratuita</a>
                 </div>
             </section>
-
             <section className="problem-section">
                 <h2>Um simples print não basta.</h2>
                 <p className="section-intro">
@@ -97,6 +98,19 @@ const HomePage = () => {
                 <p>Não deixe que crimes virtuais fiquem impunes. Dê o primeiro passo para garantir a justiça com provas que o sistema legal respeita.</p>
                 <Link to="/registrar" className="cta-button">Crie Sua Conta Gratuita</Link>
             </section>
+
+
+            <footer className="site-footer">
+                <div className="footer-content">
+                    <p className="creators">
+                        Desenvolvido por Gabriel Falcão, Gabriel Alves e Fernando Goya
+                    </p>
+                    <p className="copyright">
+                        &copy; {currentYear} SafeProof. Todos os direitos reservados.
+                    </p>
+                    <p className="security-badge">🔒 Segurança Jurídica Garantida</p>
+                </div>
+            </footer>
         </main>
     );
 };
