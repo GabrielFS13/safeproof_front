@@ -21,7 +21,7 @@ const OcorrenciasPage = ({ userType }) => {
             try {
                 const id = localStorage.getItem('id');
 
-                const getOcorrencias = await fetch(`${API_URL}/${endpoint}/${id}`, {
+                const getOcorrencias = await fetch(`${API_URL}/${endpoint}/${id}?pageSize=50`, {
                     method: "GET"
                 })
 
