@@ -103,10 +103,10 @@ const HomePage = () => {
             <footer className="site-footer">
                 <div className="footer-content">
                     <p className="creators">
-                        Desenvolvido por Gabriel Falcão, Gabriel Alves e Fernando Goya
+                        Desenvolvido por Gabriel Falcão, Gabriel Alves e Fernando Goya 
                     </p>
                     <p className="copyright">
-                        &copy; {currentYear} SafeProof. Todos os direitos reservados.
+                        &copy; {currentYear} SafeProof. Todos os direitos reservados. / equipe@safeproof.com.br
                     </p>
                     <p className="security-badge">🔒 Segurança Jurídica Garantida</p>
                 </div>
